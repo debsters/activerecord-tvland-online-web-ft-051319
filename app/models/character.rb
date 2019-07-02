@@ -1,4 +1,4 @@
 class Character < ActiveRecord::Base
-  has_many :characters
-  has_many :artists, through: :characters
+  belongs_to :actor
+  belongs_to :show
 end
